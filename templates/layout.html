@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Cats</title>
+
+</head>
+<header class="cat head">
+  <div class="centered">
+
+    <img  class="cat_image" src="{{url_for('static', filename='MTc3NjMwNQ.gif')}}" />
+
+      <h1 class="site-title">Cat Facts</h1>
+    </div>
+    <!-- .site-title -->
+ 
+</header>
+<!-- .cathead -->
+
+<body>
+   
+  {% block content %}
+
+  {% endblock content %}
+
+</body>
+</html>

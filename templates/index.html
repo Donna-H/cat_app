@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+   {% for datas in data %} 
+   <ol> {{datas ['description'] }}</ol>
+   {% endfor %}
+</div>
+
+{% endblock content %}
+        
+    
